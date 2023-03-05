@@ -4,8 +4,7 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { PoolModule } from './pool/pool.module';
 import { ConfigModule } from '@nestjs/config';
-
-console.log(process.env);
+import { DepositModule } from './deposit/deposit.module';
 
 @Module({
   imports: [
@@ -22,6 +21,7 @@ console.log(process.env);
       synchronize: Boolean(process.env.POSTGRES_SYNCHRONIZE),
     }),
     PoolModule,
+    DepositModule,
   ],
   controllers: [AppController],
   providers: [AppService],
