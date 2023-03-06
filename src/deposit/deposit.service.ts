@@ -11,8 +11,8 @@ export class DepositService {
     private depositRepository: Repository<Deposit>,
   ) {}
 
-  findAll(): Promise<Deposit[]> {
-    return this.depositRepository.find();
+  findAll(tag: string): Promise<Deposit[]> {
+    return this.depositRepository.find({ where: { tag } });
   }
 
   create(depositDto: CreateDepositDto) {

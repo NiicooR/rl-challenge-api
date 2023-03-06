@@ -9,8 +9,8 @@ export class Pool {
   name: string;
 
   @Column()
-  address: string;
+  tokenAddress: string;
 
   @Column()
-  apy: number;
+  reserveTokenAddress: string;
 }

@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Post } from '@nestjs/common';
 import { DepositService } from './deposit.service';
 import { CreateDepositDto } from './dto/createDeposit.dto';
 
@@ -9,10 +9,5 @@ export class DepositController {
   @Post()
   create(@Body() createDepositDto: CreateDepositDto) {
     return this.depositService.create(createDepositDto);
-  }
-
-  @Get()
-  getHistory() {
-    return this.depositService.findAll();
   }
 }
