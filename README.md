@@ -10,6 +10,7 @@ yarn start
 
 - Don't return entities ids from db
 - Init migration to load pools
+- Add test suite
 
 ## Api example
 
