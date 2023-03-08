@@ -5,7 +5,7 @@ import { DepositService } from './deposit.service';
 export class DepositHistoryController {
   constructor(private depositService: DepositService) {}
 
-  @Get('deposit-history')
+  @Get()
   getHistory(@Query('tag') tag: string) {
     return this.depositService.findAll(tag);
   }

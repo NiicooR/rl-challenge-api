@@ -7,6 +7,6 @@ export class PoolController {
 
   @Get()
   getPools() {
-    return this.poolService.findAll(); //TODO don't return db id
+    return this.poolService.findAll();
   }
 }
