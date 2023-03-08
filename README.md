@@ -24,3 +24,20 @@ curl --location --request GET 'localhost:3001/deposit-history?tag=LINK' \
     "tag": "tag"
 }'
 ```
+
+```
+curl --location --request GET 'localhost:3001/pool' \
+--data-raw ''
+```
+
+```
+curl --location --request POST 'localhost:3001/deposit' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "assetAddress": "assetAddress",
+    "amount": "amount",
+    "originAddress": "origin_address",
+    "tag": "tag"
+}
+'
+```
