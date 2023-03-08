@@ -6,17 +6,17 @@ export class Deposit {
   id: number;
 
   @Column()
-  asset_address: string;
+  assetAddress: string;
 
   @Column()
   amount: string; //TODO custom validator.
 
   @Column()
-  origin_address: string;
+  originAddress: string;
 
   @Column()
   tag: string;
 
   @CreateDateColumn({ type: 'timestamptz', default: () => 'CURRENT_TIMESTAMP' })
-  created_at: Date;
+  createdAt: Date;
 }

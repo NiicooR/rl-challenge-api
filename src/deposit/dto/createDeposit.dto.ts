@@ -2,11 +2,14 @@ import { IsString } from 'class-validator';
 
 export class CreateDepositDto {
   @IsString()
-  asset_address: string;
+  assetAddress: string;
 
   @IsString()
   amount: string;
 
   @IsString()
-  origin_address: string;
+  originAddress: string;
+
+  @IsString()
+  tag: string;
 }
