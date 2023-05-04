@@ -14,6 +14,7 @@ yarn start
 - Don't return entities ids from db
 - Init migration to load pools
 - Add test suite
+- Improve use of env var configuration
 
 ## Api example
 
